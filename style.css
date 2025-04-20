@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1F2937;
+}
+
+#container {
+    margin: 0 1.75em;
+}
+
+header {
+    font-family: "Karla", sans-serif;
+    font-size: 0.875rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0.714em 0 auto;
+    box-shadow: #10B981 0.072em 0 1.429em;
+    text-shadow: #FFFFFF 0.072em 0 2.143em;
+}
+
+.txt-area {
+    border-bottom: 0.0625rem solid #2F3E53;
+}
+
+#heading {
+    font-family: "Karla", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    line-height: 0.95;
+    color: #FFFFFF;
+    margin: 3em 0 0;
+}
+
+span {
+    display: block;
+    color: #4ADF86;
+    font-size: 2.188rem;
+}
+
+#pwd-txt {
+    font-family: "Inter", sans-serif;
+    font-size: 1.063rem;
+    color: #D5D4D8;
+    margin: 1.177em 0 0;
+}
+
+.pwd {
+    font-size: 1.031rem;
+    margin-top: 2.121em;
+    color: #D4D4D3;
+}
+
+#pwd-label {
+    font-style: italic;
+}
+
+#pwd-length {
+    display: inline;
+    font-size: small;
+    margin-left: 0.485em;
+    word-spacing: 0.125em;
+    letter-spacing: 0.044em;
+}
+
+#pwd-input {
+    margin-left: 0.485em;
+    text-align:center;
+    color: #4ADF86;
+    background: black;
+    padding: 0.364em 0.303em;
+    border: 1px solid #D4D4D3;
+    border-radius: 0.938rem;
+    font-weight: 750;
+}
+
+
+
+#pwd-btn {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    background-color: #10B981;
+    color: #FFFFFF;
+    padding: 0.625em 1.25em;
+    margin: 2.188em 0 ;
+    border-radius: 0.375rem;
+    border: none;
+}
+
+.pwd-display-el {
+    background: #273549;
+    color: #4ADF86;
+    margin: 3.125rem auto 0;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 1em 0;
+}
+
+.display-el2 {
+    margin: 1.25rem auto 0;
+}
+
+/* Media query ~ Breakpoints */
+
+@media (min-width: 600px) {
+    #container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 1.875rem;
+        margin: 1rem;
+    }
+
+    .pwd-display {
+        width: 40%;
+        max-width: 500px;
+        margin-top: 0.625rem;
+    }
+
+    .pwd-display-el {
+        margin-bottom: 2em;
+    }
+
+    .txt-area {
+        width: 55%;
+        max-width: 700px;
+        border-bottom: none;
+        border-right: 0.0625rem solid #2F3E53;
+        margin: 0.938rem 0 0 0;
+    }
+
+    #heading {
+        font-size: 3.5em;
+        margin: 0 0.4em 0 0;
+    }
+
+    span {
+        font-size: 2.7rem;
+    }
+
+    #pwd-btn {
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 1.25em;
+        padding: 0.8em 2em;
+    }
+
+    #pwd-txt {
+        font-size: 1.25rem;
+    }
+
+    .pwd {
+        font-size: 1.25rem;
+        margin-top: 1.5em;
+    }
+
+    #pwd-input {
+        padding: 0.6em 0.625em;
+    }
+
+    #pwd-length {
+        font-size: 1rem;
+    }
+}
