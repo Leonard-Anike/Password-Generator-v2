@@ -8,7 +8,7 @@ body {
 }
 
 #container {
-    margin: 0 1.75em;
+    margin: 0 0.7em;
 }
 
 header {
@@ -31,7 +31,7 @@ header {
     font-weight: bolder;
     line-height: 0.95;
     color: #FFFFFF;
-    margin: 3em 0 0;
+    margin: 1.5em 0 0;
 }
 
 span {
@@ -89,17 +89,50 @@ span {
     border: none;
 }
 
+#pwd-btn:hover {
+    background-color: #065038;
+}
+
 .pwd-display-el {
+    width: 100%;
     background: #273549;
+    font-size: 16px;
     color: #4ADF86;
-    margin: 3.125rem auto 0;
+    margin: 2.5rem auto 0;
     text-align: center;
-    letter-spacing: 3px;
-    padding: 1em 0;
+    letter-spacing: 7px;
+    padding: 0.8em 0;
+    border: none;
 }
 
 .display-el2 {
     margin: 1.25rem auto 0;
+}
+
+.copy-btn {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    background-color: #1F2937;
+    color: #FFFFFF;
+    padding: 0.525em 1em;
+    margin: 0.7em 0 ;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 5px #FFFFFF;
+    border: none;
+}
+
+.copy-btn:hover {
+    background-color: #FFFFFF;
+    color: #065038;
+}
+
+#copy-status {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: #D5D4D8;
+    text-align: center;
+    margin: 3em 0 0;
 }
 
 /* Media query ~ Breakpoints */
@@ -107,62 +140,65 @@ span {
 @media (min-width: 600px) {
     #container {
         position: relative;
-        display: flex;
-        flex-direction: row;
-        gap: 1.875rem;
-        margin: 1rem;
     }
-
-    .pwd-display {
-        width: 40%;
-        max-width: 500px;
-        margin-top: 0.625rem;
-    }
-
-    .pwd-display-el {
-        margin-bottom: 2em;
-    }
-
-    .txt-area {
-        width: 55%;
-        max-width: 700px;
-        border-bottom: none;
-        border-right: 0.0625rem solid #2F3E53;
-        margin: 0.938rem 0 0 0;
+    header {
+        font-size: 1rem;
     }
 
     #heading {
-        font-size: 3.5em;
-        margin: 0 0.4em 0 0;
+        font-size: 3.4rem;
+        margin: 0.1em 0em 0 0;
+    }
+    span {
+        display: inline;
+        font-size: 2.8rem;
     }
 
-    span {
-        font-size: 2.7rem;
+    #pwd-txt {
+        font-size: 1.7rem;
+        margin: 0;
+    }
+
+    .pwd {
+        font-size: 1.5rem;
+        margin: 0.45em 0;
+    }
+
+    #pwd-input {
+        padding: 0.1em 0.2em;
+        font-size: 1.5rem;
+    }
+
+    #pwd-length {
+        font-size: 1.2rem;
     }
 
     #pwd-btn {
         position: absolute;
-        top: 110%;
-        left: 50%;
+        top: 22%;
+        left: 88%;
         transform: translate(-50%, -50%);
-        margin-top: 1.25em;
-        padding: 0.8em 2em;
+        padding: 0.3em 2em;
     }
 
-    #pwd-txt {
-        font-size: 1.25rem;
+    .pwd-display-el {
+        width: 75%;
+        margin: 5px ;
     }
 
-    .pwd {
-        font-size: 1.25rem;
-        margin-top: 1.5em;
+    .pwd-display-el2 {
+        margin-top: 2em;
     }
 
-    #pwd-input {
-        padding: 0.6em 0.625em;
+    .copy-btn {
+        display: inline;
+        margin: 0.7em 0 0 2em;
+        padding: 0.6em 2em;
     }
 
-    #pwd-length {
-        font-size: 1rem;
+    #copy-status {
+        display: block;
+        font-size: 1.1rem;
+        margin-top: 0.3em;
     }
 }

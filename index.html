@@ -35,9 +35,13 @@
             </div>
             
             <div class="pwd-display">
-                <p id="password1" class="pwd-display-el"> <!--password character display --> </p> 
-                <p id="password2" class="pwd-display-el display-el2"> <!--password character display --> </p>
+                <input type="text" id="password1" class="pwd-display-el" readonly/> <!--password character display1 --> 
+                <button class="copy-btn" data-target="password1"> Copy </button> 
+                <input type="text" id="password2" class="pwd-display-el display-el2" readonly/> <!--password character display2 -->
+                <button class="copy-btn" data-target="password2"> Copy </button> 
             </div>
+
+            <span id="copy-status"></span>
     </main>
     <script src="script.js"></script>
 </body>
