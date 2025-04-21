@@ -183,7 +183,7 @@ span {
 
     .pwd-display-el {
         width: 75%;
-        margin: 5px ;
+        margin: 12px ;
     }
 
     .pwd-display-el2 {
@@ -192,15 +192,17 @@ span {
 
     .copy-btn {
         display: inline;
-        margin: 0.7em 0 0 2em;
+        margin: 0.9em 0 0 2em;
         padding: 0.6em 2em;
     }
 
     #copy-status {
         position: absolute;
-        top: 68%;
+        top: 73.5%;
+        left: 40%;
+        transform: translate(-50%, -50%);
         display: block;
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-top: 0.3em;
     }
 }
